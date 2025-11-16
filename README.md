@@ -81,12 +81,34 @@ const soma = numeros.reduce((acumulador, num) => acumulador + num, 0);
 console.log(soma);
 
 ```
+
+**EX COMBINADO**
+```
+const precos = [10, 25, 5, 60, 40];
+
+const comDesconto = precos.map(p => p * 0.9); // [9, 22.5, 4.5, 54, 36]
+
+const acimaDe20 = comDesconto.filter(p => p > 20); // [22.5, 54, 36]
+
+const total = acimaDe20.reduce((acc, p) => acc + p, 0); // 112.5
+
+console.log("Preços com desconto:", comDesconto);
+console.log("Filtrados (>20):", acimaDe20);
+console.log("Total:", total);
+
+```
+
 ---
 **AUTOR**
 --
 **NOME:ANTHONY KISS**
 --
 **EMAIL:anthony.ryan@academico.ifpb.edu.br**
+
+---
+**LICENÇA**
+---
+ESTE PROJETO ESTÁ SOB A LINCEÇA **MIT**
 
 
 
